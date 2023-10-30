@@ -15,7 +15,7 @@
           define(strtoupper($key),$value);
       }
       global $connection;
-      $connection = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+      $connection = mysqli_connect(db_host,db_user,db_pass,db_name);
       if(!$connection){
           die("Cannot Establish A Secure Connection To The Host Server At The Moment!");
       }
