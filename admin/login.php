@@ -10,7 +10,7 @@
       /* DATABASE CONNECTION*/
 
 
-        $db['db_host'] = 'localhost';
+        $db['db_host'] = '10.104.164.132';
         $db['db_user'] = 'root';
         $db['db_pass'] = 'Sabc123*';
         $db['db_name'] = 'Company';
