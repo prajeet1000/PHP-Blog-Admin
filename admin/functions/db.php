@@ -6,16 +6,7 @@ session_start();
   /* DATABASE CONNECTION*/
 
 
-        $db['db_host'] = '10.104.164.132';
-        $db['db_user'] = 'root';
-        $db['db_pass'] = 'Sabc123*';
-        $db['db_name'] = 'Company';
-
-      foreach($db as $key=>$value){
-          define(strtoupper($key),$value);
-      }
-      global $connection;
-      $connection = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+      $connection = mysqli_connect('10.104.164.132','root','Sabc123*','Company');
       if(!$connection){
           die("Cannot Establish A Secure Connection To The Host Server At The Moment!");
       }
